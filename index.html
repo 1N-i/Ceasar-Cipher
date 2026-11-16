@@ -9,18 +9,18 @@
     <body>
         <div class="left-col">
             <p>Normal Text: </p>
-            <textarea id="text-normal"></textarea>
+            <textarea id="text-normal" placeholder="Text to convert:"></textarea>
         </div>
 
         <div class="mid-col">
-            <button><</button>
-            <input type="number">
-            <button>></button>
+            <button onclick="cipherToNormal()"><</button>
+            <input type="number" id="num-of-moves" placeholder="1">
+            <button onclick="normalToCipher()">></button>
         </div>
 
         <div class="right-col">
             <p>Ciphered Text: </p>
-            <textarea id="text-cipher"></textarea>
+            <textarea id="text-cipher" placeholder="Text to get back to normal:"></textarea>
         </div>
 
         <script src="script.js"></script>
